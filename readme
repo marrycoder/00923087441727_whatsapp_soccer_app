@@ -1,0 +1,45 @@
+# Soccer Analytics App
+
+The soccer analytics app is a tool for analyzing player performance and team tactics in soccer. It provides written reports and video analysis to players and coaches, with the option to edit highlight videos for individual players to be emailed to coaches. The app is designed for use with youth and amateur soccer teams, but can be easily adapted for use with professional teams.
+
+## Installation
+
+To install the soccer analytics app, you will need to install the following software and libraries:
+
+- Python 3.6 or later
+- OpenCV 4.2 or later
+- Pandas 1.1 or later
+- Scikit-learn 0.23 or later
+
+You can install these dependencies using the following commands:
+pip install opencv-python
+pip install pandas
+pip install scikit-learn
+
+
+## Required Files
+
+To run the soccer analytics app, you will need the following files:
+
+- `soccer_analytics.py`: This is the main Python script that contains the app code.
+- `soccer.mp4`: This is the soccer video that will be analyzed by the app.
+- `annotation.csv`: This is a CSV file containing the annotation data for the soccer video.
+
+## Running the App
+
+To run the soccer analytics app, navigate to the directory containing the required files and execute the `soccer_analytics.py` script using the following command:
+
+python soccer_analytics.py
+
+
+The app will process the soccer video and generate a report with player performance statistics and team tactics analysis.
+
+## Using the App
+
+To use the app, follow these steps:
+
+1. Select the soccer video that you want to analyze.
+2. Select the annotation data file for the video.
+3. Click the "Analyze" button to start the analysis.
+4. The app will generate a report with player performance statistics and team tactics
+

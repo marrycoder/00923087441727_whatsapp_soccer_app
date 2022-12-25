@@ -1,0 +1,34 @@
+Soccer Video Analysis App
+
+Introduction
+
+The soccer analytics app aims to provide a comprehensive analysis of player performance and team tactics for youth and amateur soccer teams. The app provides written reports and video analysis to players and coaches, with the option to edit highlight videos for individual players to be emailed to coaches. The app is easily adaptable for use with professional soccer teams.
+
+Requirements
+
+To run this app, you will need to have the following software installed on your system:
+
+Python 3.6 or higher
+NumPy
+Pandas
+OpenCV
+scikit-learn
+matplotlib
+reportlab
+Setup
+
+Clone or download this repository
+Navigate to the root directory of the repository
+Run pip install -r requirements.txt to install the required libraries
+Place the soccer video that you want to analyze in the root directory of the repository
+Edit the file config.py and set the VIDEO_FILE variable to the name of the soccer video file
+Run the script extract_data.py to extract the data from the video and save it to a CSV file
+Run the script analyze_data.py to train a machine learning model on the data and generate the report
+The report will be saved as a PDF file in the root directory of the repository
+Notes
+
+The player_detector.xml file is a pre-trained object detector for detecting players in the video. It should be placed in the root directory of the repository.
+The machine learning model used in this app is a random forest classifier. You can adjust the hyperparameters of the model by modifying the MODEL_PARAMS dictionary in the config.py file.
+The preprocess_data() function in the extract_data.py script handles missing values and scales the numerical variables. You can modify this function to suit your specific needs.
+The extract_player_positions() and extract_player_actions() functions in the extract_data.py script are used to extract player positions and actions from the video frames. You may need to modify these functions depending on the quality and resolution of the video.
+The generate_report() function in the analyze_data.py script generates the report as a PDF file. You can modify this function to customize the layout and content of the report.
